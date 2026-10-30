@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7f7;
+    color: #29202b;
+}
+
+.main-header {
+    background: #fff;
+    height: 94px;
+    padding: 0 3.2%;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px #0000000a;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    width: 175px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: #171717;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.top-links i {
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.discover {
+    border: 1px solid #f5b85d;
+    padding: 5px 12px;
+    border-radius: 4px;
+    color: #a50930 !important;
+}
+
+.signup {
+    border: 1px solid #e40032;
+    color: #e40032 !important;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+.signin {
+    background: #a50930;
+    color: white !important;
+    padding: 8px 13px;
+    border-radius: 5px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #29202b;
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #d50032;
+}
+
+.page-content {
+    max-width: 1600px;
+    margin: auto;
+    padding: 18px 6.85%;
+}
+
+.booking-card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 4px 15px #0000000c;
+    min-height: 300px;
+}
+
+.booking-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f6f6;
+    height: 48px;
+    padding: 3px 5px;
+    border-radius: 6px;
+}
+
+.booking-tabs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.booking-tabs a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.booking-tabs .selected {
+    background: white;
+    color: #d90032;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px #0002;
+}
+
+.student-offer {
+    background: #fce9e5;
+    color: #df002f;
+    padding: 8px 13px;
+    font-size: 14px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.booking-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0 28px;
+}
+
+.trip-options {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.trip-options label,
+.multi-city {
+    font-size: 14px;
+    color: #283b58;
+}
+
+.trip-options input {
+    accent-color: #e40032;
+}
+
+.multi-city {
+    color: #174c9b;
+}
+
+.payment-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.skypulse {
+    color: #bd0050;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.group-text {
+    color: #666;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.pay-text {
+    font-size: 12px;
+    color: #777;
+}
+
+.payment-options i {
+    color: #e40032;
+    margin-left: 5px;
+}
+
+.promo {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.flight-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.city-field {
+    width: 23%;
+    padding-right: 15px;
+}
+
+.city-names {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.city-names strong {
+    font-size: 38px;
+    font-weight: 500;
+    color: #657080;
+}
+
+.swap-icon {
+    color: #e40032;
+    font-size: 22px;
+}
+
+.city-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #23364f;
+}
+
+.search-field {
+    border-left: 1px solid #aeb4bd;
+    padding: 0 15px;
+    flex: 1;
+    min-width: 0;
+}
+
+.search-field label {
+    display: block;
+    font-size: 12px;
+    color: #62666c;
+    margin-bottom: 6px;
+}
+
+.search-field input,
+.search-field select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1d304a;
+    font-size: 16px;
+    min-width: 0;
+}
+
+.search-field select {
+    cursor: pointer;
+}
+
+.search-button {
+    background: #e65f78;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 28px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.search-button:hover {
+    background: #bd0033;
+}
+
+.login-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 7px 18px 7px 8px;
+    width: fit-content;
+    margin: 25px 0 0 auto;
+    font-size: 14px;
+    color: #20334c;
+    background: #faf8f3;
+}
+
+.offer-icon {
+    background: white;
+    color: #e40032;
+    border-radius: 50%;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.deals-section {
+    margin-top: 60px;
+}
+
+.deals-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.deals-heading h2 {
+    color: #c90036;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.deals-heading p {
+    font-size: 19px;
+    margin: 0;
+    color: #24344b;
+}
+
+.deal-banner {
+    height: 144px;
+    border-radius: 15px;
+    background: radial-gradient(circle at 70% 50%, #ad0751 0%, #800039 55%, #290014 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+    overflow: hidden;
+}
+
+.deal-banner h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.deal-icon {
+    font-size: 62px;
+    color: #eac36b;
+    filter: drop-shadow(2px 4px 3px #0008);
+}
+
+.quick-links {
+    margin-top: 25px;
+}
+
+.quick-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-decoration: none;
+    color: #41454d;
+    background: white;
+    padding: 22px 25px;
+    border-radius: 14px;
+    height: 75px;
+    font-size: 20px;
+}
+
+.quick-card > i:first-child {
+    color: #e40032;
+    font-size: 28px;
+}
+
+.quick-card .arrow {
+    color: #e40032;
+    font-size: 20px;
+}
+
+.quick-card:hover {
+    box-shadow: 0 4px 15px #00000012;
+    color: #c90036;
+}
+
+@media (max-width: 1100px) {
+
+    .main-header {
+        height: auto;
+        padding: 15px 3%;
+    }
+
+    .header-container {
+        align-items: flex-start;
+    }
+
+    .top-links,
+    .main-nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .top-links a,
+    .main-nav a {
+        font-size: 11px;
+    }
+
+    .booking-options {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .flight-search {
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    .city-field {
+        width: 100%;
+    }
+
+    .search-field {
+        min-width: 30%;
+    }
+
+    .search-button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .brand img {
+        width: 145px;
+    }
+
+    .header-right {
+        align-items: flex-start;
+    }
+
+    .top-links,
+    .main-nav {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .page-content {
+        padding: 15px;
+    }
+
+    .booking-card {
+        padding: 15px;
+    }
+
+    .booking-top {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .booking-tabs {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .booking-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-options {
+        flex-wrap: wrap;
+    }
+
+    .flight-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .city-field {
+        width: 100%;
+    }
+
+    .search-field {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+        padding: 12px 0;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .deals-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .deals-heading h2 {
+        font-size: 24px;
+    }
+
+    .deals-heading p {
+        font-size: 14px;
+    }
+
+    .deal-banner {
+        height: 125px;
+    }
+
+    .quick-card {
+        font-size: 17px;
+    }
+}
